@@ -1,0 +1,12 @@
+out/
+*.img
+*.bin
+*.log
+.env
+.env.*
+backups/
+firmware/
+dumps/
+secrets/
+*.key
+*.pem
