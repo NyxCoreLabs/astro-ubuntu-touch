@@ -60,3 +60,16 @@ Contributions and technical discussion are welcome.
 
 Experimental software. No working device images are
 currently provided.
+
+## License
+
+Original NyxCoreLabs development tools and documentation
+in this repository are licensed under GPL-2.0-only.
+
+Kernel patches modify GPLv2-licensed Linux kernel sources
+and retain the applicable upstream licensing requirements.
+
+The upstream kernel, external dependencies, and third-party
+tools retain their respective licenses and copyrights.
+
+See LICENSE for the GPL version 2 license text.
