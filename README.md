@@ -73,3 +73,9 @@ The upstream kernel, external dependencies, and third-party
 tools retain their respective licenses and copyrights.
 
 See LICENSE for the GPL version 2 license text.
+
+## Build Checkpoints
+
+- [Build Checkpoint 001](docs/build-checkpoint-001.md) —
+  First successful ARM64 kernel compilation.
+  Device boot remains untested.
