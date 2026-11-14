@@ -79,3 +79,31 @@ See LICENSE for the GPL version 2 license text.
 - [Build Checkpoint 001](docs/build-checkpoint-001.md) —
   First successful ARM64 kernel compilation.
   Device boot remains untested.
+
+## Automated Kernel Build
+
+The project includes a Docker-based ARM64 kernel builder.
+
+Requirements: Linux, Bash, Git, Docker, and the upstream
+Astro kernel checkout.
+
+Place the upstream kernel checkout beside this repository,
+or pass its path as the first argument.
+
+Run:
+
+    ./scripts/build-kernel.sh
+
+The builder exports the pinned kernel revision, applies
+the published patches, configures the kernel, compiles
+Image.gz, and generates a build manifest.
+
+Artifacts and logs are saved under out/.
+
+A successful build does not guarantee a bootable kernel.
+Do not flash experimental images without a verified
+device-specific recovery procedure.
+
+Builds have been reproduced successfully on the original
+development workstation, but bit-for-bit identical
+kernel artifacts have not yet been demonstrated.
